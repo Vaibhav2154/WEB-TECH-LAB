@@ -1,10 +1,16 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>Frameset Example</title> 
-</head> 
-<frameset cols="20%, 80%"> 
-    <frame src="nav.html" name="leftFrame"> 
-    <frame src="content1.html" name="rightFrame"> 
-</frameset> 
-</html> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSSSTU | University Portal</title>
+</head>
+<frameset cols="20%, 80%" border="0">
+    <frame src="nav.html" name="leftFrame" noresize>
+    <frame src="content1.html" name="rightFrame">
+    
+    <noframes>
+        <body>
+            Your browser does not support frames. Please visit the <a href="content1.html">Home Page</a>.
+        </body>
+    </noframes>
+</frameset>
+</html>
